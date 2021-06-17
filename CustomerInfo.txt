@@ -1,0 +1,6 @@
+4 //Total Customers
+// ID,DOB,Name,Address,PhoneNum,CustomerType,MeterType,ConnectionDate,RegularUnits,PeakHourUnits, PaymentStatus
+0001,2001/12/10,Abdullah Nadeem,200-B Garden Town,03334618408,C,S,2011/05/10,3000,1500,P
+0002,1996/01/12,Waheed Khan,190-C Johar Town,03334618408,D,S,2001/05/10,1500,800,U
+0003,2000/15/12,Sarah Khan,20A Township, 03334618408,C,T,2020/05/10,3000,400,P
+0004,2001/12/12,Hira Nadeem,50D Wapda Town,03334618408,D,T,2016/05/10,500,5,U
