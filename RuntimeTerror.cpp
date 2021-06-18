@@ -1872,16 +1872,10 @@ bool LESCO::ProcessMenu()
 			cout << "4)Update Tariff Tax (Press 4)";
 			cout <<"\n\n\t\t\t5) Update Payement Status (Press 5)\t";
 			cout << "6) Change Password (Press 6)\t ";
-			cout << "7)Logout (Press 7)\n\n\tYour Option:\t";
+			cout << "7)Display Customer Report (Press 7)\t";
+			cout << "8)Logout (Press 8)\n\n\tYour Option:\t";
 		
 			cin >> Option1;
-
-			while (Option1!=1 && Option1!=2 && Option1!=3 && Option1!=4 && Option1!=5 
-							&& Option1!=6 && Option1!=7)
-			{
-				cout << "\nInvalid Option. Choose between 1-7 only. Enter again: ";
-				cin >> Option1;
-			}
 
 			if(Option1 == 1) //View Bill
 			{
@@ -1912,6 +1906,7 @@ bool LESCO::ProcessMenu()
 			{
 				UpdatePaymentStatus();
 				UpdateBillFile();
+				UpdateCustomerFile();
 			}
 
 			else if(Option1 == 6) //Reset Employee Password
@@ -1919,7 +1914,12 @@ bool LESCO::ProcessMenu()
 				ChangeEmployeePassword();
 			}
 
-			else if(Option1 == 7)
+			else if(Option1 == 7) //Reset Employee Password
+			{
+				DisplayReport();
+			}
+
+			else if(Option1 == 8)
 			{
 				cout<<"\n\n---------------------------------------------------------------------------------------------";
 				cout<<"\n\t\tYour account is Logged Out\n\n";
@@ -1927,7 +1927,7 @@ bool LESCO::ProcessMenu()
 			}
 
 		}
-		while (Option1 != 7);
+		while (Option1 != 8);
 	}
 	else
 	if(option == 2)
